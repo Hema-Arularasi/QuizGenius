@@ -12,5 +12,3 @@ git clone [https://github.com/your-username/quizgenius.git](https://github.com/H
 cd quizgenius
 Run the Flask application:
 python app.py
-This will start the development server at http://localhost:5000.
-Open your web browser and navigate to http://localhost:5000.

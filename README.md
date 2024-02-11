@@ -4,7 +4,8 @@ QuizGenius is a web-based tool that utilizes Flask and spaCy to generate quiz qu
 Python (3.6 or higher)
 Flask (Install using: pip install Flask)
 spaCy (Install using: pip install spacy)
-spaCy English model (Download using: python -m spacy download en_core_web_sm)
+spaCy English model 
+(Download using: python -m spacy download en_core_web_sm)
 ### Setup
 Clone the Repository:
 git clone https://github.com/Hema-Arularasi/QuizGenius

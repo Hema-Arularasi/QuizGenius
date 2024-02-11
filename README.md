@@ -8,7 +8,7 @@ SETUP:Install the required Python packages:
 pip install Flask spacy
 python -m spacy download en_core_web_sm
 Clone the QuizGenius repository:
-git clone https://github.com/your-username/quizgenius.git
+git clone [https://github.com/your-username/quizgenius.git](https://github.com/Hema-Arularasi/QuizGenius)
 cd quizgenius
 Run the Flask application:
 python app.py

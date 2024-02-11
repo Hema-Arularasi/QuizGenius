@@ -17,9 +17,11 @@ python -m spacy download en_core_web_sm
 python app.py
 ###### Running in Visual Studio Code:
 Open Project in Visual Studio Code:Install Python Extension:
-If not already installed, install the "Python" extension in Visual Studio Code.
+If not already installed,
+install the "Python" extension in Visual Studio Code.
 Set Up Virtual Environment (Optional):
-Create and activate a virtual environment:python -m venv venv
+Create and activate a virtual environment:
+python -m venv venv
 source venv/bin/activate  # On Linux/Mac
 venv\Scripts\activate  # On Windows
 ###### Run Flask Application:

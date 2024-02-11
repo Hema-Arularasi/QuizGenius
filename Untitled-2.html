@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizGenius</title>
+</head>
+<body>
+    <h1>QuizGenius</h1>
+    <textarea id="contentInput" placeholder="Paste educational content here..."></textarea>
+    <input type="number" id="numQuestions" placeholder="Number of questions">
+    <button onclick="generateQuiz()">Generate Quiz</button>
+    <div id="quizQuestions"></div>
+
+    <script>
+        function generateQuiz() {
+            const contentInput = document.getElementById('contentInput').value;
+            const numQuestions = document.getElementById('numQuestions').value;
+
+            fetch('/generate_quiz', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ content: contentInput, num_questions: numQuestions }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                const quizQuestionsDiv = document.getElementById('quizQuestions');
+                quizQuestionsDiv.innerHTML = '<h2>Generated Quiz Questions:</h2>';
+                
+                // Display quiz questions
+                for (const question of data.questions) {
+                    quizQuestionsDiv.innerHTML += `<p>Question ${question.id}: ${question.word}</p>`;
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        }
+    </script>
+</body>
+</html>

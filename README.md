@@ -7,7 +7,7 @@ spaCy (Install using: pip install spacy)
 spaCy English model (Download using: python -m spacy download en_core_web_sm)
 ### Setup
 Clone the Repository:
-git clone [https://github.com/your-username/quizgenius.git](https://github.com/Hema-Arularasi/QuizGeniu)https://github.com/Hema-Arularasi/QuizGenius
+git clone (https://github.com/Hema-Arularasi/QuizGeniu)https://github.com/Hema-Arularasi/QuizGenius
 cd quizgenius
 #### Install Dependencies:
 pip install Flask spacy
